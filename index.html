@@ -21,10 +21,9 @@
             position: relative;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #FFFFFF; /* White text for header */
+        header h1 img{
+            width: 200px; /* Adjust this value to match the size of the text */
+            height: auto; /* Maintain aspect ratio */
         }
         header p {
             margin: 5px 0 0;
@@ -123,8 +122,8 @@
 
          /* Mobile Styles */
          @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em; /* Smaller font size for mobile */
+            header h1 img {
+                width: 150px; /* Smaller logo for mobile */
             }
             header p {
                 font-size: 1em; /* Smaller font size for mobile */
@@ -157,7 +156,9 @@
 </head>
 <body>
     <header>
-        <h1>Sports Pit</h1>
+        <h1>
+            <img src="sportspitlogov2.png" alt="Sports Pit Logo" class="logo">
+        </h1>
         <p>Your Ultimate Destination for Official Jerseys</p>
         <div class="menu">
             <a href="#home">Home</a>
@@ -189,7 +190,7 @@
                     <p>Official NBA jerseys for all teams.</p>
                 </div>
                 <div class="product-card">
-                    <img src="nhlsportspitdisplaypics1.png" alt="NHL Jersey">
+                    <img src="nhlsportspitdisplaypicsv2.png" alt="NHL Jersey">
                     <h3>NHL Jerseys</h3>
                     <p>Official NHL jerseys for all teams.</p>
                 </div>
