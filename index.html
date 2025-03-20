@@ -23,12 +23,14 @@
         }
         header h1 img{
             width: 200px; /* Adjust this value to match the size of the text */
-            height: auto; /* Maintain aspect ratio */
+            height: 40px; /* Maintain aspect ratio */
+            margin: 0px;
         }
         header p {
-            margin: 5px 0 0;
+            margin: 0px;
             font-size: 1.2em;
             color: #E0F7FA; /* Light cyan for subtext */
+            margin-bottom: 5px;
         }
         .menu {
             position: absolute;
@@ -46,19 +48,21 @@
             color: #FFDD57; /* Yellow hover effect */
         }
         .hero {
-            background-image: url('https://via.placeholder.com/1200x400'); /* Replace with your image */
+            background-image: url("sportspitfrontpagepicv1.png"); /* Replace with your image */
             background-size: cover;
             background-position: center;
-            height: 400px;
+            background-repeat: no-repeat;
+            height: 600px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+            margin-top: 8px;
         }
         .hero h2 {
             font-size: 3em;
-            background-color: rgba(74, 144, 226, 0.8); /* Semi-transparent blue */
+            background-color: rgba(74, 144, 226, 0.3); /* More transparent blue */
             padding: 20px;
             border-radius: 10px;
             color: #FFFFFF;
@@ -126,10 +130,7 @@
                 padding: 1px;
             }
             header h1 img {
-                width: 125px; /* Smaller logo for mobile */
-                margin-bottom: 0px;
-                padding: 0px;
-                margin: 0;
+                width: 200px; /* Smaller logo for mobile */
             }
             header p {
                 font-size: 1em; /* Smaller font size for mobile */
@@ -144,9 +145,14 @@
                 display: block; /* Stack menu items vertically */
                 margin: 5px 0;
             }
+            .hero{
+                background-size: contain; /* Ensures the full image is visible */
+                height: 200px;
+            }
             .hero h2 {
-                font-size: 2em; /* Smaller font size for mobile */
-                padding: 10px;
+                font-size: 1em; /* Smaller font size for mobile */
+                padding: 5px;
+                width: 150px;
             }
             .product-grid {
                 grid-template-columns: 1fr; /* Single column for mobile */
@@ -164,7 +170,7 @@
 <body>
     <header>
         <h1>
-            <img src="sportspitlogov2.png" alt="Sports Pit Logo" class="logo">
+            <img src="sportspitlogov3.png" alt="Sports Pit Logo" class="logo">
         </h1>
         <p>Your Ultimate Destination for Official Jerseys</p>
         <div class="menu">
@@ -175,7 +181,7 @@
         </div>
     </header>
     <div id="home" class="hero">
-        <h2>Gear Up with the Best Jerseys in Town!</h2>
+        <h2>Premium jerseys for true fans</h2>
     </div>
     <div class="container">
         <section id="shop" class="featured-products">
@@ -215,7 +221,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2023 Sports Pit. All rights reserved.</p>
+        <p>&copy; 2025 Sports Pit. All rights reserved.</p>
     </footer>
 </body>
 </html>
