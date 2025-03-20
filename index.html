@@ -120,6 +120,39 @@
             color: #FFFFFF;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
+
+         /* Mobile Styles */
+         @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* Smaller font size for mobile */
+            }
+            header p {
+                font-size: 1em; /* Smaller font size for mobile */
+            }
+            .menu {
+                position: static; /* Move menu below the header */
+                text-align: center;
+                margin-top: 10px;
+            }
+            .menu a {
+                display: block; /* Stack menu items vertically */
+                margin: 5px 0;
+            }
+            .hero h2 {
+                font-size: 2em; /* Smaller font size for mobile */
+                padding: 10px;
+            }
+            .product-grid {
+                grid-template-columns: 1fr; /* Single column for mobile */
+            }
+            .product-card {
+                padding: 15px; /* Smaller padding for mobile */
+            }
+            .featured-products h2, .about h2, .contact h2 {
+                font-size: 1.5em; /* Smaller font size for mobile */
+            }
+        }
+
     </style>
 </head>
 <body>
